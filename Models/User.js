@@ -6,8 +6,8 @@ if (!mongoose.connection.db){
 const db = mongoose.connection;
 const Schema = mongoose.Schema;
 const users = new Schema({
-    userID: String,
     username: String,
+    password: String,
 })
 
 
