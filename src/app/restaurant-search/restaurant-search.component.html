@@ -1,0 +1,9 @@
+<div class="container">
+  <form #f="ngForm" (ngSubmit) = "addRestaurant(f.value); f.reset()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name"  name="name" required ngModel>
+    </div>
+
+  </form>
+</div>
