@@ -11,7 +11,7 @@ const User = require('../models/User');
 const passport = require('passport');
 const Strategy = require('passport-twitter').Strategy;
 
-var passportOption = {
+const passportOption = {
     consumerKey: Twitter.CONSUMER_KEY,
     consumerSecret: Twitter.CONSUMER_SECRET,
     callbackURL: Twitter.CALLBACK_URL}
