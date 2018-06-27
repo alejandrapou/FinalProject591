@@ -42,8 +42,8 @@ router.get('/', (req, res) => {
         // console.log("restaurant is " + restaurant)
         const wikiOutcome = result;
         let str = restaurant.nameRestaurant;
-        var request = require('request');
-        var options = {
+        let request = require('request');
+        let options = {
             method: 'GET',
             url: 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + str,
             qs: {name: str}
